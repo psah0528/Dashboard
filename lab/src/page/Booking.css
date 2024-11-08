@@ -1,0 +1,74 @@
+/* Booking Page Container */
+.booking-page {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 20px;
+ font-family: Arial, sans-serif;
+ max-width: 500px;
+ margin: 0 auto;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ border-radius: 10px;
+ background-color: #f9f9f9;
+}
+
+/* Form Title */
+.booking-page h2 {
+ margin-bottom: 20px;
+ color: #333;
+}
+
+/* Form Styling */
+.booking-form {
+ width: 100%;
+}
+
+.form-group {
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 15px;
+}
+
+label {
+ font-weight: bold;
+ margin-bottom: 5px;
+ color: #555;
+}
+
+input, select {
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ font-size: 16px;
+}
+
+input[type="date"] {
+ font-family: inherit; /* Fixes font issue on some browsers */
+}
+
+.submit-button {
+ padding: 10px;
+ font-size: 16px;
+ font-weight: bold;
+ color: white;
+ background-color: #4CAF50;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+ background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+ .booking-page {
+     padding: 15px;
+ }
+
+ input, select, .submit-button {
+     font-size: 14px;
+ }
+}

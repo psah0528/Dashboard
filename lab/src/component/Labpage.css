@@ -1,0 +1,133 @@
+/* Basic Styling for the Page */
+*{
+ margin: 0;
+ padding: 0;
+}
+.lab-page {
+ display: flex;
+ flex-direction: column;
+ font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.lab-navbar {
+ display: flex;
+ justify-content: space-around;
+ background-color: #cccccc;
+ padding: 10px;
+ border-bottom: 1px solid #999999;
+ flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.nav-item {
+ color: black;
+ text-decoration: none;
+ font-size: 17px;
+ padding: 8px 10px;
+ margin: 2px 0;
+}
+
+.nav-item:hover {
+ background-color: #2814d9;
+ color: white;
+ border-radius: 3px;
+}
+
+/* Content Section */
+.lab-content {
+ position: relative;
+ text-align: center;
+ color: black;
+}
+
+/* Image Styling */
+.lab-image {
+ width: 100%;
+ height: auto;
+ background: cover;
+}
+
+/* Logo Positioning */
+.lab-logo {
+ position: absolute;
+ top: 10%;
+ left: 10%;
+ color: black;
+}
+
+.lab-logo h1 {
+ font-size: 36px;
+ margin: 0;
+}
+
+.lab-logo p {
+ font-size: 16px;
+ margin: 0;
+ font-style: italic;
+}
+
+/* Saral Qualitative Text */
+.saral-qualitative {
+ position: absolute;
+ top: 10%;
+ right: 10%;
+ color: darkred;
+ text-align: right;
+}
+
+.saral-qualitative h2 {
+ font-size: 36px;
+ margin: 0;
+}
+
+.saral-qualitative p {
+ font-size: 16px;
+ margin: 0;
+ font-style: italic;
+}
+
+/* Responsive Design */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+ .lab-navbar {
+     flex-direction: column; /* Stack navbar items vertically */
+     align-items: center;
+ }
+ 
+ .lab-logo, .saral-qualitative {
+     position: static; /* Remove absolute positioning */
+     margin-top: 20px;
+     text-align: center;
+ }
+ 
+ .lab-logo h1, .saral-qualitative h2 {
+     font-size: 24px;
+ }
+ 
+ .lab-logo p, .saral-qualitative p {
+     font-size: 14px;
+ }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+ .lab-navbar {
+     font-size: 12px;
+ }
+
+ .nav-item {
+     font-size: 12px;
+     padding: 8px;
+     width: 100%; /* Make navbar items full width */
+     text-align: center;
+ }
+
+ .lab-logo h1, .saral-qualitative h2 {
+     font-size: 20px;
+ }
+ 
+ .lab-logo p, .saral-qualitative p {
+     font-size: 12px;
+ }
+}
